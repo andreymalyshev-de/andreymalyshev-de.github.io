@@ -1,2 +1,2 @@
 # andreymalyshev-de.github.io
-website about myself
+a website about myself
