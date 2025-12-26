@@ -2,17 +2,19 @@
 padding - for the inner */
 
 h1{
+    text-align: center;
     margin: auto;
     font-weight: bold;
     font-style: italic;
 }
 
 .foo{
+    text-align: center;
     margin: auto;
 }
 
 .myPic{
     width: 100%;
-    max-width: 600;
+    max-width: 60;
     height: auto;
 }
