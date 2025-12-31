@@ -3,18 +3,160 @@ padding - for the inner */
 
 h1{
     text-align: center;
-    margin: auto;
+    margin-left: auto;
     font-weight: bold;
     font-style: italic;
+    font-size: 50px;
 }
 
 .foo{
     text-align: center;
-    margin: auto;
+    margin-left: auto;
+}
+
+.description{
+    display: flex;
+    margin-bottom: 50px;
+    max-width: 100%;
+    height: auto;
 }
 
 .myPic{
-    width: 100%;
-    max-width: 60px;
+    display: block;
+    width: 30%;
+    /* max-width: 750px; */
     height: auto;
+    margin-top: 30px;
+    margin-left: 200px;
 }
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    max-width: 45%;
+}
+
+.pData{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 100px;
+    margin-top: 40px;
+    margin-right: 600px;
+    margin-bottom: 40px
+}
+
+.address{
+    font-size: 20px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+.phone{
+    font-size: 20px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+.email{
+    font-size: 20px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+.studies_jobs{
+    display: flex;
+    justify-content: center;
+    gap: 350px;
+    margin-bottom: 30px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.block1{
+    width: 65%;
+}
+
+.title{
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.code_skills{
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    margin-bottom: 30px;
+    margin-right: 150px;
+}
+
+.h3{
+    font-size: 25px;
+}
+
+.h3_text{
+    font-size: 20px;
+}
+
+.hobbies{
+    display: flex;
+    /* align-items: center; aligns them vertically*/
+    justify-content: center;
+    font-size: 20px;
+}
+
+/* decorations and stuff */
+
+body{
+    background-color: #f0f2f5;
+    font-family: sans-serif;
+}
+
+.divider{
+    height: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    /* top-bottom, left-right */
+}
+
+.cube{
+    width: 15px;
+    height: 15px;
+    background-color: #333;
+    rotate: 45deg;
+    margin: 0px 20px
+}
+
+.divider::before,
+.divider::after{
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #333;
+    max-width: 500px
+}
+
+.imperial-script-regular {
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ending{
+    text-align: center;
+    font-family: "Imperial Script", cursive;
+    font-size: 50px;
+}
+
+.picture{
+    width: 25px;
+    height: auto;
+    margin-left: 5px;
+}
+
+/* *{
+    outline: 1px solid red;
+} */

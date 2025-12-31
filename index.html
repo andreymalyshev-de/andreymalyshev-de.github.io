@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles.css">
@@ -9,111 +12,174 @@
 </head>
 <body>
 <p class="foo">just a website about myself :)</p>
-<h1>Andrii Malyshev</h1>
-<img class="myPic" src="pic.jpg">
-<pre>
-some personal data:
+<div class="divider">
+    <div class="cube"></div>
+</div>
+<h1 style="font-family: serif;">Andrii Malyshev</h1>
+<div class="description">
 
- - address: 5th Avenue, New York City 10111
- - mobile: 88005553535
- - email: promt@gmail.com
+    <img class="myPic" src="pic.jpg">
 
-</pre>
-<h2>studies</h2>
-<ul>
-    <li>
-        <h3>Zaporizhzhya State Gymnasium #28</h3>
-        <p>central subjects: math, physics, english, IT</p>
-    </li>
-    <li>
-        <h3>Studienkolleg Hannover</h3>
-        <p>an obligatory preparation for the university</p>
-        <p>central subjects: math, physics, IT, chemistry</p>
-    </li>
-    <li>
-        <h3>Technische Universität München</h3>
-        <p>the best university in the whole EU😎</p>
-    </li>
-</ul>
-<h2>jobs</h2>
-<ul>
-    <li>
-        <h3>Private Tutor</h3>
-        <p>job description: a tutor position in math and german in a private tutoring school "BestNote"</p>
-        <p>central tasks: teaching of defferent topics in math and german to students of age of 9-18 y.o.</p>
-        <p>duration: Mai 2024 - October 2024</p>
-    </li>
-    <li>
-        <h3>Working Student</h3>
-        <p>job description: a working student position in a hardware-selling company PixelComputer GmbH</p>
-        <p>central tasks: client support, installing and setting up various software, setting up the hardware parts</p>
-        <p>duration: October 2025 - December 2025</p>
-    </li>
-</ul>
-<h2>coding experience(programming languages)</h2>
-<ul>
-    <li>
-        <h3>Java</h3>
-        <p>proficiency level: strong skills</p>
-    </li>
-    <li>
-        <h3>Python</h3>
-        <p>proficiency level: good skills</p>
-    </li>
-    <li>
-        <h3>C/C++</h3>
-        <p>proficiency level: strong skills</p>
-    </li>
-    <li>
-        <h3>Ocaml</h3>
-        <p>proficiency level: good skills</p>
-    </li>
-</ul>
-<h2>other skills</h2>
-<ul>
-        <h3>Languages</h3>
-    <li>
-        <h3>Russian</h3>
-        <p>proficiency level: mother tongue</p>
-    </li>
-    <li>
-        <h3>Ukrainian</h3>
-        <p>proficiency level: mother tongue</p>
-    </li>
-    <li>
-        <h3>English</h3>
-        <p>proficiency level: C1</p>
-    </li>
-    <li>
-        <h3>German</h3>
-        <p>proficiency level: C1</p>
-    </li>
-    <li>
-        <h3>French</h3>
-        <p>proficiency level: A2</p>
-    </li>
-</ul>
-<h2>hobbies</h2>
-<ul>
-     <li>
-        <p>IT:)</p>
-    </li>
-    <li>
-        <p>Finances</p>
-    </li>
-    <li>
-        <p>Sports(Gym, Swimming, Martial Arts)</p>
-    </li>
-    <li>
-        <p>Books(all genres), current book: The Autobiography of Abraham Linkoln</p>
-    </li>
-    <li>
-        <p>History</p>
-    </li>
-    <li>
-        <p>Politics</p>
-    </li>
-</ul>
-<p>that's it, thank you for paying your attention!!!</p>
+    <div class="bio">
+    <p class="pData">   
+        some personal data:
+    </p>
+    <p class="address">
+    - address: 5th Avenue, New York City 10111
+    </p>
+    <p class="phone">
+    - mobile: 88005553535
+    </p>
+    <p class="email"> 
+    - email: promt@gmail.com
+    </p>
+    </div>
+
+</div>
+
+<div class="studies_jobs">
+    <div class="block1">
+        <h2 class="title"><u>studies</u></h2>
+        <ul>
+            <li>
+                <h3 class="h3">Zaporizhzhya State Gymnasium #28</h3>
+                <div class="h3_text">
+                    <p><em><u>Description</u></em>: school education</p>
+                    <p><em><u>Central Subjects</u></em>: math, physics, english, IT</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3" lang="de">Studienkolleg Hannover</h3>
+                <div class="h3_text">
+                    <p><em><u>Description</u></em>: an obligatory preparation for the university</p>
+                    <p><u><em>Central Subjects</u></em>: math, physics, IT, chemistry</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3" lang="de">Technische Universität München</h3>
+                <div class="h3_text">
+                    <p><em><u>Description</u></em>: the best university in the whole EU😎</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="block2">
+        <h2 class="title"><u>jobs</u></h2>
+        <ul>
+            <li>
+                <h3 class="h3">Private Tutor</h3>
+                <div class="h3_text">
+                    <p><u><em>Job Description</em></u>: a tutor position in math and german in a private tutoring school "BestNote"</p>
+                    <p><em><u>Central Tasks</u></em>: teaching of defferent topics in math and german to students of age of 9-18 y.o.</p>
+                    <p><em><u>Duration</u></em>: Mai 2024 - October 2024</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3">Working Student</h3>
+                <div class="h3_text">
+                    <p><em><u>Job Description</u></em>: a working student position in a hardware-selling company PixelComputer GmbH</p>
+                    <p><em><u>Central Tasks</u></em>: client support, installing and setting up various software, setting up the hardware parts</p>
+                    <p><em><u>Duration</u></em>: October 2025 - December 2025</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="code_skills">
+    <div class="block">
+        <h2 class="title"><u>coding experience(programming languages)</u></h2>
+        <ul>
+            <li>
+                <h3 class="h3">Java<img src="java.png" class="picture"></h3>
+                <div class="h3_text">
+                    <p><em><u>Proficiency Level</u></em>: strong skills</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3">Python<img src="python.jpg" class="picture"></h3>
+                <div class="h3_text">
+                    <p><em><u>Proficiency Level</u></em>: good skills</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3">C/C++<img src="c.png" style="width: 28px; height: auto; margin-left: 5px;"><img src="cpp.png" class="picture"></h3>
+                <div class="h3_text">                  <!-- style, not class!!! -->
+                    <p><em><u>Proficiency Level</u></em>: strong skills</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3">Ocaml<img src="ocaml.png" class="picture"></h3>
+                <div class="h3_text">
+                    <p><em><u>Proficiency Level</u></em>: good skills</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="block">
+        <h2 class="title"><u>other skills</u></h2>
+        <ul>
+                <!-- <h3 class="h3">Languages</h3> -->
+            <li>
+                <h3 class="h3">Russian<img src="russia.png" class="picture"></h3>
+                <div class="h3_text">
+                    <p><em><u>Proficiency Level</u></em>: mother tongue</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3">Ukrainian<img src="ukraine.png" class="picture"></h3>
+                <div class="h3_text">
+                    <p><em><u>Proficiency Level</u></em>: mother tongue</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3">English<img src="usa.png" class="picture"></h3>
+                <div class="h3_text">
+                    <p><em><u>Proficiency Level</u></em>: C1</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3">German<img src="germany.png" class="picture"></h3>
+                <div class="h3_text">
+                    <p><em><u>Proficiency Level</u></em>: C1</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3">French<img src="france.png" class="picture"></h3>
+                <div class="h3_text">
+                    <p><em><u>Proficiency Level</u></em>: A2</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="hobbies">
+    <div class="block">
+        <h2 class="title"><u>hobbies</u></h2>
+        <ul>
+             <li>
+                <p>IT:)</p>
+            </li>
+            <li>
+                <p>Finances</p>
+            </li>
+            <li>
+                <p>Sports(Gym, Swimming, Martial Arts)</p>
+            </li>
+            <li>
+                <p>Books(all genres), current book: The Autobiography of Abraham Linkoln</p>
+            </li>
+            <li>
+                <p>History</p>
+            </li>
+            <li>
+                <p>Politics</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="divider">
+    <div class="cube"></div>
+</div>
+<p class="ending">that's it, thank you for paying your attention!!!</p>
 </body>
 </html>
