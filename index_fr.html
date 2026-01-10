@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<!--  rel = relation  -->
+<title>My Portfolio</title>
+</head>
+<body style="font-family: serif;">
+<header class="dark">
+<p class="foo">simplement un website par moi :)</p>
+<div class="lang_menu">
+    <button onclick="toggling()" class="dropbtn" style="font-family: serif;"><img src="france-menu.png" class="menuPic">Français</button>
+    <div id="myMenu" class="menu-content">
+        <!-- href = link -->
+        <a href="index_de.html" style="display: inline-flex; align-items: center;" lang="de"><img src="germany-menu.png" class="menuPic">Deutsch</a>
+        <a href="index.html" style="display: inline-flex; align-items: center;" lang="en"><img src="usa-menu.png" class="menuPic">English</a>
+    </div>
+</div>
+<div class="divider">
+    <div class="cube"></div>
+</div>
+</header>
+<h1 style="font-family: serif;">Andrii Malyshev</h1>
+<div class="description">
+
+    <img class="myPic" src="pic.jpg">
+
+    <div class="bio">
+    <p class="pData">   
+        certaines données personnelles:
+    </p>
+    <p class="address">
+    - l'adresse: 5th Avenue, New York City 10111
+    </p>
+    <p class="phone">
+    - le mobile: 88005553535
+    </p>
+    <p class="email"> 
+    - l'email: promt@gmail.com
+    </p>
+    </div>
+
+</div>
+
+<div class="studies_jobs">
+    <div class="block1">
+        <h2 class="title"><u>l'éducation</u></h2>
+        <ul>
+            <li>
+                <h3 class="h3">Gymnase d'État #28 de Zaporizhzhya</h3>
+                <div class="h3_text">
+                    <p><em><u>Description</u></em>: l'enseignement scolaire</p>
+                    <p><em><u>Matières Centrales</u></em>: mathématiques, physique, anglais, IT</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3" lang="de">Studienkolleg Hannover</h3>
+                <div class="h3_text">
+                    <p><em><u>Description</u></em>: une préparation obligatoire à l'université</p>
+                    <p><u><em>Matières Centrales</u></em>: mathématiques, physique, IT, chimie</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3" lang="de">Technische Universität München</h3>
+                <div class="h3_text">
+                    <p><em><u>Description</u></em>: la meilleure université de toute l'UE😎</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="block2">
+        <h2 class="title"><u>jobs</u></h2>
+        <ul>
+            <li>
+                <h3 class="h3">Professeur Particulier</h3>
+                <div class="h3_text">
+                    <p><u><em>Description du Job</em></u>: un poste de tuteur en mathématiques et en allemand dans l'école de soutien scolaire privée «BestNote»</p>
+                    <p><em><u>Devoirs Centrales</u></em>: Enseignement de différents sujets en mathématiques et en allemand à des élèves âgés de 9 à 18 ans</p>
+                    <p><em><u>Durée</u></em>: Mai 2024 - Octobre 2024</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3">Étudiant Travailleur</h3>
+                <div class="h3_text">
+                    <p><em><u>Description du Job</u></em>: un poste d'étudiant salarié au sein de l'entreprise de vente de matériel informatique «PixelComputer GmbH»</p>
+                    <p><em><u>Devoirs Centrales</u></em>: assistance clientèle, installation et configuration de divers logiciels, configuration des composants matériels</p>
+                    <p><em><u>Durée</u></em>: Octobre 2025 - Decembre 2025</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="code_skills">
+    <div class="block">
+        <h2 class="title"><u>expérience en codage (langages de programmation)</u></h2>
+        <ul>
+            <li>
+                <h3 class="h3">Java<img src="java.png" class="picture"></h3>
+                <div class="h3_text">
+                    <p><em><u>Niveau de Compétence</u></em>: compétences solides</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3">Python<img src="python.jpg" class="picture"></h3>
+                <div class="h3_text">
+                    <p><em><u>Niveau de Compétence</u></em>: bonnes compétences</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3">C/C++<img src="c.png" style="width: 28px; height: auto; margin-left: 5px;"><img src="cpp.png" class="picture"></h3>
+                <div class="h3_text">                  <!-- style, not class!!! -->
+                    <p><em><u>Niveau de Compétence</u></em>: compétences solides</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3">Ocaml<img src="ocaml.png" class="picture"></h3>
+                <div class="h3_text">
+                    <p><em><u>Niveau de Compétence</u></em>: bonnes compétences</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="block">
+        <h2 class="title"><u>autres compétences</u></h2>
+        <ul>
+                <!-- <h3 class="h3">Languages</h3> -->
+            <li>
+                <h3 class="h3">Le Russe<img src="russia.png" class="picture"></h3>
+                <div class="h3_text">
+                    <p><em><u>Niveau de Compétence</u></em>: langue maternelle</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3">L'ukrainien<img src="ukraine.png" class="picture"></h3>
+                <div class="h3_text">
+                    <p><em><u>Niveau de Compétence</u></em>: langue maternelle</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3">L'anglais<img src="usa.png" class="picture"></h3>
+                <div class="h3_text">
+                    <p><em><u>Niveau de Compétence</u></em>: C1</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3">L'allemand<img src="germany.png" class="picture"></h3>
+                <div class="h3_text">
+                    <p><em><u>Niveau de Compétence</u></em>: C1</p>
+                </div>
+            </li>
+            <li>
+                <h3 class="h3">Le Français<img src="france.png" class="picture"></h3>
+                <div class="h3_text">
+                    <p><em><u>Niveau de Compétence</u></em>: A2</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="hobbies">
+    <div class="block">
+        <h2 class="title"><u>loisirs</u></h2>
+        <ul>
+             <li>
+                <p>IT:)</p>
+            </li>
+            <li>
+                <p>Finances</p>
+            </li>
+            <li>
+                <p>Sports(Gym, Nager, Arts Martieux)</p>
+            </li>
+            <li>
+                <p>Livres(tous genres), livre actuel: The Autobiography of Abraham Linkoln</p>
+            </li>
+            <li>
+                <p>Histoire</p>
+            </li>
+            <li>
+                <p>Politique</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<footer class="dark">
+<div class="divider">
+    <div class="cube"></div>
+</div>
+<p class="ending">voilà, merci beaucoup de votre attention!!!</p>
+</footer>
+<button onclick="backToTop()" class="topBtn"><div class="topBtnArrow"></div></button>
+<script src="script.js"></script>
+</body>
+</html>

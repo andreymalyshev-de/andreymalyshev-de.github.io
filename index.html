@@ -3,7 +3,10 @@
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- allows faster loading of fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<link rel="icon" type="img/png" href="pic2.jpg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles.css">
@@ -11,175 +14,204 @@
 <title>My Portfolio</title>
 </head>
 <body>
+<header>
 <p class="foo">just a website about myself :)</p>
-<div class="divider">
-    <div class="cube"></div>
+<div class="lang_menu">
+    <button onclick="toggling()" class="dropbtn"><img src="usa-menu.png" class="menuPic">English</button>
+    <div id="myMenu" class="menu-content">
+        <!-- href = link -->
+        <a href="index_de.html" style="display: inline-flex; align-items: center;" lang="de"><img src="germany-menu.png" class="menuPic">Deutsch</a>
+        <a href="index_fr.html" style="display: inline-flex; align-items: center; font-family: serif;" lang="fr"><img src="france-menu.png" class="menuPic">Français</a>
+    </div>
 </div>
-<h1 style="font-family: serif;">Andrii Malyshev</h1>
-<div class="description">
+<!-- <div class="divider">
+</div> -->
+</header>
+<h1>Andrii Malyshev</h1>
+<div class="description hidden">
 
-    <img class="myPic" src="pic.jpg">
-
-    <div class="bio">
-    <p class="pData">   
-        some personal data:
-    </p>
-    <p class="address">
-    - address: 5th Avenue, New York City 10111
-    </p>
-    <p class="phone">
-    - mobile: 88005553535
-    </p>
-    <p class="email"> 
-    - email: promt@gmail.com
-    </p>
+    <div class="pic-container">
+        <img class="myPic2" src="pic3.jpg">
     </div>
 
+    <div class="bio-container">
+        <h2 class="bio-title">about me: </h2>
+        <p class="bio-text">
+            Based in Munich, originally from Ukraine, I'm passionate about turning theoretical knowledge into practical solutions. <br><br>
+            Currently, I'm a Computer Science student at TUM (3rd Semester) who is seeking a working student position where I can contribute my skills to a team while growing professionally and personally. <br><br>
+            Outside of coding, I'm an avid <span class="reader">reader<span class="book">My current book: The Autobiography of Abraham Linkoln</span></span> and history enthusiast, constantly exploring new topics in politics and finance.
+            I also can't imagine my life without sport, so I regulary swim and go to the gym. 
+        </p>
+        <button onclick="contact()" class="contact-button">Contact Me &rarr;</button>
+        </div>
+    </div>
+
 </div>
 
-<div class="studies_jobs">
-    <div class="block1">
-        <h2 class="title"><u>studies</u></h2>
-        <ul>
-            <li>
-                <h3 class="h3">Zaporizhzhya State Gymnasium #28</h3>
-                <div class="h3_text">
-                    <p><em><u>Description</u></em>: school education</p>
-                    <p><em><u>Central Subjects</u></em>: math, physics, english, IT</p>
-                </div>
-            </li>
-            <li>
-                <h3 class="h3" lang="de">Studienkolleg Hannover</h3>
-                <div class="h3_text">
-                    <p><em><u>Description</u></em>: an obligatory preparation for the university</p>
-                    <p><u><em>Central Subjects</u></em>: math, physics, IT, chemistry</p>
-                </div>
-            </li>
-            <li>
-                <h3 class="h3" lang="de">Technische Universität München</h3>
-                <div class="h3_text">
-                    <p><em><u>Description</u></em>: the best university in the whole EU😎</p>
-                </div>
-            </li>
-        </ul>
+<div class="grid">
+
+    <div class="grid-column">
+        <h2 class="title">studies</h2>
+        <div class="card hidden">
+                <h3>Zaporizhzhya State Gymnasium #28</h3>
+                <p class="role">Secondary Education</p>
+                <p class="desc">Central Subjects: Math, Physics, English, IT</p>
+        </div>        
+        <div class="card hidden">
+                <h3 lang="de">Studienkolleg Hannover</h3>
+                    <p class="role">University Preparation</p>
+                    <p class="desc">Central Subjects: Math, Physics, IT, Chemistry</p>
+        </div>
+        <div class="card hidden">
+                <h3 lang="de">Technische Universität München</h3>
+                <p class="role">the best university in the whole EU😎</p>
+        </div>
     </div>
-    <div class="block2">
-        <h2 class="title"><u>jobs</u></h2>
-        <ul>
-            <li>
-                <h3 class="h3">Private Tutor</h3>
-                <div class="h3_text">
-                    <p><u><em>Job Description</em></u>: a tutor position in math and german in a private tutoring school "BestNote"</p>
-                    <p><em><u>Central Tasks</u></em>: teaching of defferent topics in math and german to students of age of 9-18 y.o.</p>
-                    <p><em><u>Duration</u></em>: Mai 2024 - October 2024</p>
-                </div>
-            </li>
-            <li>
-                <h3 class="h3">Working Student</h3>
-                <div class="h3_text">
-                    <p><em><u>Job Description</u></em>: a working student position in a hardware-selling company PixelComputer GmbH</p>
-                    <p><em><u>Central Tasks</u></em>: client support, installing and setting up various software, setting up the hardware parts</p>
-                    <p><em><u>Duration</u></em>: October 2025 - December 2025</p>
-                </div>
-            </li>
-        </ul>
+    <div class="grid-column">
+        <h2 class="title">jobs</h2>
+            <div class="card hidden">
+                <h3>Private Tutor</h3>
+                <span class="date">May 2024 - Oct 2024</span>
+                <!-- span - small text, margin: 0 by default -->
+                <p class="role">"BestNote" Tutoring School</p>
+                <p class="desc">Teaching Math and German to students aged 9-18.</p>
+            </div>
+            <div class="card hidden">
+                <h3>Working Student</h3>
+                <span class="date">Oct 2025 - Dec 2025</span>
+                <p class="role">PixelComputer GmbH</p>
+                <p class="desc">Client support, hardware assembly, and software configuration</p>
+            </div>
     </div>
 </div>
-<div class="code_skills">
-    <div class="block">
-        <h2 class="title"><u>coding experience(programming languages)</u></h2>
-        <ul>
-            <li>
-                <h3 class="h3">Java<img src="java.png" class="picture"></h3>
-                <div class="h3_text">
-                    <p><em><u>Proficiency Level</u></em>: strong skills</p>
-                </div>
-            </li>
-            <li>
-                <h3 class="h3">Python<img src="python.jpg" class="picture"></h3>
-                <div class="h3_text">
-                    <p><em><u>Proficiency Level</u></em>: good skills</p>
-                </div>
-            </li>
-            <li>
-                <h3 class="h3">C/C++<img src="c.png" style="width: 28px; height: auto; margin-left: 5px;"><img src="cpp.png" class="picture"></h3>
-                <div class="h3_text">                  <!-- style, not class!!! -->
-                    <p><em><u>Proficiency Level</u></em>: strong skills</p>
-                </div>
-            </li>
-            <li>
-                <h3 class="h3">Ocaml<img src="ocaml.png" class="picture"></h3>
-                <div class="h3_text">
-                    <p><em><u>Proficiency Level</u></em>: good skills</p>
-                </div>
-            </li>
-        </ul>
+<div class="grid" style="margin-bottom: 100px;">
+    <div class="grid-column">
+        <h2 class="title">coding skills</h2>
+
+            <div class="card hidden">
+
+                <div class="img_text"  style="margin-top: 0;">
+                    <img src="java.png" class="picture">
+                    <div class="info">
+                        <h3>Java</h3>
+                        <span class="badge intermediate" style="margin-top: 10px;">Intermediate</span>
+                </div></div>
+
+                <div class="img_text">
+                    <img src="python.webp" class="picture">
+                    <div class="info">
+                        <h3>Python</h3>
+                        <span class="badge intermediate" style="margin-top: 10px;">Intermediate</span>
+                </div></div>
+
+                <div class="img_text">
+                    <img src="cpp.png" class="picture">
+                    <div class="info">
+                        <h3>C/C++</h3>                  <!-- style, not class!!! -->
+                        <span class="badge intermediate" style="margin-top: 10px;">Intermediate</span>
+                </div></div>
+
+                <div class="img_text">
+                    <img src="ocaml.png" class="picture">
+                    <div class="info">
+                        <h3>Ocaml</h3>
+                        <span class="badge beginner" style="margin-top: 10px;">Beginner</span>
+                </div></div>
+
+                <div class="img_text">
+                    <img src="js.png" class="picture">
+                    <div class="info">
+                        <h3>HTML/CSS/JS</h3>
+                        <span class="badge beginner" style="margin-top: 10px;">Beginner</span>
+                </div></div>
+            </div>
     </div>
-    <div class="block">
-        <h2 class="title"><u>other skills</u></h2>
-        <ul>
-                <!-- <h3 class="h3">Languages</h3> -->
-            <li>
-                <h3 class="h3">Russian<img src="russia.png" class="picture"></h3>
-                <div class="h3_text">
-                    <p><em><u>Proficiency Level</u></em>: mother tongue</p>
+    <div class="grid-column">
+        <h2 class="title">languages</h2>
+
+        <div class="card hidden">
+            <div class="img_text" style="margin-top: 0;">
+                <img src="russia.png" class="picture">
+                <div class="info">
+                    <h3>Russian</h3>
+                    <span class="badge intermediate" style="margin-top: 10px;">Mother tongue</span>
                 </div>
-            </li>
-            <li>
-                <h3 class="h3">Ukrainian<img src="ukraine.png" class="picture"></h3>
-                <div class="h3_text">
-                    <p><em><u>Proficiency Level</u></em>: mother tongue</p>
+            </div>
+
+            <div class="img_text">
+                <img src="ukraine.png" class="picture">
+                <div class="info">
+                    <h3>Ukrainian</h3>
+                    <span class="badge intermediate" style="margin-top: 10px;">Mother tongue</span>
                 </div>
-            </li>
-            <li>
-                <h3 class="h3">English<img src="usa.png" class="picture"></h3>
-                <div class="h3_text">
-                    <p><em><u>Proficiency Level</u></em>: C1</p>
+            </div>
+
+            <div class="img_text">
+                <img src="usa.png" class="picture">
+                <div class="info">
+                    <h3>English</h3>
+                    <span class="badge advanced" style="margin-top: 10px;">C1</span>
                 </div>
-            </li>
-            <li>
-                <h3 class="h3">German<img src="germany.png" class="picture"></h3>
-                <div class="h3_text">
-                    <p><em><u>Proficiency Level</u></em>: C1</p>
+            </div>
+
+            <div class="img_text">
+                <img src="germany.png" class="picture">
+                <div class="info">
+                    <h3>German</h3>
+                    <span class="badge advanced" style="margin-top: 10px;">C1</span>
                 </div>
-            </li>
-            <li>
-                <h3 class="h3">French<img src="france.png" class="picture"></h3>
-                <div class="h3_text">
-                    <p><em><u>Proficiency Level</u></em>: A2</p>
+            </div>
+
+            <div class="img_text">
+                <img src="france.png" class="picture">
+                <div class="info">
+                    <h3>French</h3>
+                    <span class="badge beginner" style="margin-top: 10px;">A2</span>
                 </div>
-            </li>
-        </ul>
-    </div>
-</div>
-<div class="hobbies">
-    <div class="block">
-        <h2 class="title"><u>hobbies</u></h2>
-        <ul>
-             <li>
-                <p>IT:)</p>
-            </li>
-            <li>
-                <p>Finances</p>
-            </li>
-            <li>
-                <p>Sports(Gym, Swimming, Martial Arts)</p>
-            </li>
-            <li>
-                <p>Books(all genres), current book: The Autobiography of Abraham Linkoln</p>
-            </li>
-            <li>
-                <p>History</p>
-            </li>
-            <li>
-                <p>Politics</p>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </div>
-<div class="divider">
-    <div class="cube"></div>
 </div>
-<p class="ending">that's it, thank you for paying your attention!!!</p>
+<footer class="dark">
+    <h3 class="contact-title">you can contact me via:</h3>
+    <div class="contact-grid">
+        <div class="contact-column left-align">
+            <div class="contact-item hidden">
+                <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    <!-- svg allows to draw things, path d(direction) explaines how it will be drawn -->
+                </svg>
+                <span>88005553535</span>
+            </div>
+            <a href="mailto:promt@gmail.com" class="contact-item hidden">
+                <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>promt@gmail.com</span>
+            </a>
+        </div>
+        <div class="contact-column right-align">
+            <a href="" class="contact-item hidden">
+                <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <span>GitHub</span>
+            </a>
+            <a href="" class="contact-item hidden">
+                <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </div>
+    <div class="copyright">© 2026 Andrey Malyshev</div>
+    <button onclick="backToTop()" class="topBtn"><div class="topBtnArrow"></div></button>
+    <script src="script.js"></script>
+</footer>
 </body>
 </html>
