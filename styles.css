@@ -28,13 +28,6 @@ padding - for the inner */
     align-items: center;
 }
 
-.myPic{
-    display: block;
-    width: 30%;
-    /* max-width: 750px; */
-    height: auto;
-    margin-top: 30px;
-}
 
 .myPic2{
     width: 100%;
@@ -46,13 +39,6 @@ padding - for the inner */
     background-color: white;
 }
 
-.myPic3{
-    display: block;
-    width: 30%;
-    /* max-width: 750px; */
-    height: auto;
-    margin-top: 30px;
-}
 
 .bio-container{
     background-color: #2c3e50;
@@ -63,7 +49,7 @@ padding - for the inner */
 }
 
 .bio-title{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lora', serif;
     font-size: 32px;
     color: #ffffff;
     margin-top: 0;
@@ -107,7 +93,7 @@ padding - for the inner */
 .reader:hover .book{
     visibility: visible;
     opacity: 1;
-    top: 140%
+    top: 140%;
 }
 
 .contact-button {
@@ -221,12 +207,18 @@ h1, h2, h3{
 }
 
 h1{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lora', serif;
+    font-weight: bold;
     text-align: center;
     font-size: 55px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     letter-spacing: -0.5px;
     line-height: 1.1;
+    margin-top: 20px;
+}
+
+h2{
+    font-family: 'Lora', serif;
 }
 
 .info{
@@ -273,7 +265,7 @@ h1{
 
 .contact-title{
     font-size: 28px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lora', serif;
     color: #fff;
     /* border-bottom: 2px solid rgb(117, 176, 117);
     /* ensures the line is only under the title? */ 
@@ -442,7 +434,8 @@ body{
 
 .menu-content{
     display: none; /* ensures it will be hidden unless clicked */
-    background-color: #dbe3e6;
+    background-color: rgb(233, 236, 239);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     min-width: 135px;
     position: absolute;
     margin-left: 13px;
@@ -551,7 +544,7 @@ body{
         padding: 0;
     }
 
-    .contact-title{
+     .contact-title{
         left: 55%;
     }
 
@@ -573,9 +566,25 @@ body{
         right: 0;
         top: 0;
     }
+
+    .menu-content{
+        background-color: rgba(233, 236, 239, 0.0);
+        margin-left: -5px;
+        box-shadow: none;
+    }
+    
+    .dropbtn{
+        padding-left: 0;
+    }
+
     header{
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
+    }    /**/
+
+    h1{
+        margin-top: 0;
+        margin-bottom: 40px;
     }
 }
 

@@ -4,199 +4,209 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<link rel="icon" type="img/png" href="pic2-circle.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles.css">
-<!--  rel = relation  -->
 <title>Mein Portfolio</title>
 </head>
 <body>
-<header class="dark">
+<header>
 <p class="foo">einfach ne Webseite über mich :)</p>
 <div class="lang_menu">
     <button onclick="toggling()" class="dropbtn"><img src="germany-menu.png" class="menuPic">Deutsch</button>
     <div id="myMenu" class="menu-content">
-        <!-- href = link -->
         <a href="index.html" style="display: inline-flex; align-items: center;" lang="en"><img src="usa-menu.png" class="menuPic">English</a>
-        <a href="index_fr.html" style="display: inline-flex; align-items: center; font-family: serif;" lang="fr"><img src="france-menu.png" class="menuPic">Français</a>
+        <a href="index_fr.html" style="display: inline-flex; align-items: center;" lang="fr"><img src="france-menu.png" class="menuPic">Français</a>
     </div>
-</div>
-<div class="divider">
-    <div class="cube"></div>
 </div>
 </header>
-<h1 style="font-family: serif;">Andrii Malyshev</h1>
-<div class="description">
+<h1>Andrii Malyshev</h1>
+<div class="description hidden">
 
-    <img class="myPic2" src="pic3.jpg">
+    <div class="pic-container">
+        <img class="myPic2" src="pic3.jpg">
+    </div>
 
-    <div class="bio">
-    <p class="pData">   
-        ein bisschen über mich:
-    </p>
-    <p class="address">
-    - Adresse: 5th Avenue, New York City 10111
-    </p>
-    <p class="phone">
-    - Tel: 88005553535
-    </p>
-    <p class="email"> 
-    - Email: promt@gmail.com
-    </p>
-    <p class="email"> 
-    - Nationalität: ukrainisch
-    </p>
+    <div class="bio-container">
+        <h2 class="bio-title">über mich: </h2>
+        <p class="bio-text">
+            Wohnhaft in München, ursprünglich aus der Ukraine, brenne ich darauf, theoretisches Wissen in praktische Lösungen umzuwandeln. <br><br>
+            Derzeit studiere ich Informatik an der TUM (3. Semester) und suche einen Werkstudentenjob, bei dem ich meine Fähigkeiten in ein Team einbringen und mich gleichzeitig beruflich sowie persönlich weiterentwickeln kann. <br><br>
+            Abseits von Programmieren begeistern mich Geschichte, Politik und Finanzen; 
+            <span class="reader">Lesen<span class="book">Mein aktuelles Buch: Die Autobiography of Abraham Lincoln</span></span> 
+            gibt mir eine ebenso gute Abwechselung vom Alltag.
+            Zudem kann ich mein Leben ohne Sport nicht vorstellen, also gehe ich regelmäßig schwimmen und ins Gym. 
+        </p>
+        <button onclick="contact()" class="contact-button">Kontakt &rarr;</button>
+        </div>
     </div>
 
 </div>
 
-<div class="studies_jobs">
-    <div class="block1">
-        <h2 class="title"><u>Bildung</u></h2>
-        <ul>
-            <li>
-                <h3 class="h3">Saporischschja Staatsgymnasium #28</h3>
-                <div class="h3_text">
-                    <p><em><u>Beschreibung</u></em>: Schulbildung</p>
-                    <p><em><u>Hauptfächer</u></em>: Mathe, Physik, Englisch, IT</p>
-                </div>
-            </li>
-            <li>
-                <h3 class="h3" lang="de">Studienkolleg Hannover</h3>
-                <div class="h3_text">
-                    <p><em><u>Bescreibung</u></em>: verpflichtete Studiumsvorbereitung</p>
-                    <p><u><em>Hauptfächer</u></em>: Mathe, Physik, IT, Chemie</p>
-                </div>
-            </li>
-            <li>
-                <h3 class="h3" lang="de">Technische Universität München</h3>
-                <div class="h3_text">
-                    <p><em><u>Beschreibung</u></em>: die beste Uni der ganzen EU😎</p>
-                </div>
-            </li>
-        </ul>
+<div class="grid">
+
+    <div class="grid-column">
+        <h2 class="title">studium</h2>
+        <div class="card hidden">
+                <h3>Saporischschja Staatsgymnasium #28</h3>
+                <p class="role">Schulbildung</p>
+                <p class="desc">Schwerpunkte: Mathe, Physik, Englisch, IT</p>
+        </div>        
+        <div class="card hidden">
+                <h3 lang="de">Studienkolleg Hannover</h3>
+                    <p class="role">Studienvorbereitung</p>
+                    <p class="desc">Schwerpunkte: Mathe, Physik, IT, Chemie</p>
+        </div>
+        <div class="card hidden">
+                <h3 lang="de">Technische Universität München</h3>
+                <p class="role">B.Sc. Informatik</p>
+                <p class="desc">Eine der führenden technischen Universitäten der Welt</p>
+        </div>
     </div>
-    <div class="block2">
-        <h2 class="title"><u>Jobs</u></h2>
-        <ul>
-            <li>
-                <h3 class="h3">Nachhilfetutor</h3>
-                <div class="h3_text">
-                    <p><u><em>Arbeitsbeschreibung</em></u>: eine Lehrerstelle in Mathematik und Deutsch an der privaten Nachhilfe-Schule "BestNote"</p>
-                    <p><em><u>Hauptaufgaben</u></em>: Unterricht verschiedener Themen in Mathematik und Deutsch für Schüler (9-18 Jahre alt)</p>
-                    <p><em><u>Dauer</u></em>: Mai 2024 - Oktober 2024</p>
-                </div>
-            </li>
-            <li>
-                <h3 class="h3">Working Student</h3>
-                <div class="h3_text">
-                    <p><em><u>Arbeitsbeschreibung</u></em>: eine Werkstudentenstelle im Soft- und Hardware-Verkaufunternehmen PixelComputer GmbH</p>
-                    <p><em><u>Hauptaufgaben</u></em>: Kundensupport, Installieren und Aufsetzen verschiedener Software, Aufsetzen von Hardware</p>
-                    <p><em><u>Dauer</u></em>: Oktober 2025 - Dezember 2025</p>
-                </div>
-            </li>
-        </ul>
+    <div class="grid-column">
+        <h2 class="title">berufserfahrung</h2>
+            <div class="card hidden">
+                <h3>Privatlehrer</h3>
+                <span class="date">Mai 2024 - Okt 2024</span>
+                <p class="role">"BestNote" Nachhilfeschule</p>
+                <p class="desc">Unterricht in Mathe und Deutsch für Schüler im Alter von 9-18 Jahren.</p>
+            </div>
+            <div class="card hidden">
+                <h3>Werkstudent</h3>
+                <span class="date">Okt 2025 - Dez 2025</span>
+                <p class="role">PixelComputer GmbH</p>
+                <p class="desc">Kundensupport, Hardware-Aufsetzung und Software-Konfiguration</p>
+            </div>
     </div>
 </div>
-<div class="code_skills">
-    <div class="block">
-        <h2 class="title"><u>Codingerfahrung(Programmiersprachen)</u></h2>
-        <ul>
-            <li>
-                <h3 class="h3">Java<img src="java.png" class="picture"></h3>
-                <div class="h3_text">
-                    <p><em><u>Kenntnisstand</u></em>: strong skills</p>
-                </div>
-            </li>
-            <li>
-                <h3 class="h3">Python<img src="python.jpg" class="picture"></h3>
-                <div class="h3_text">
-                    <p><em><u>Kenntnisstand</u></em>: good skills</p>
-                </div>
-            </li>
-            <li>
-                <h3 class="h3">C/C++<img src="c.png" style="width: 28px; height: auto; margin-left: 5px;"><img src="cpp.png" class="picture"></h3>
-                <div class="h3_text">                  <!-- style, not class!!! -->
-                    <p><em><u>Kenntnisstand</u></em>: strong skills</p>
-                </div>
-            </li>
-            <li>
-                <h3 class="h3">Ocaml<img src="ocaml.png" class="picture"></h3>
-                <div class="h3_text">
-                    <p><em><u>Kenntnisstand</u></em>: good skills</p>
-                </div>
-            </li>
-        </ul>
+<div class="grid" style="margin-bottom: 100px;">
+    <div class="grid-column">
+        <h2 class="title">coding skills</h2>
+
+            <div class="card hidden">
+
+                <div class="img_text"  style="margin-top: 0;">
+                    <img src="java.png" class="picture">
+                    <div class="info">
+                        <h3>Java</h3>
+                        <span class="badge intermediate" style="margin-top: 10px;">Fortgeschritten</span>
+                </div></div>
+
+                <div class="img_text">
+                    <img src="python.webp" class="picture">
+                    <div class="info">
+                        <h3>Python</h3>
+                        <span class="badge intermediate" style="margin-top: 10px;">Fortgeschritten</span>
+                </div></div>
+
+                <div class="img_text">
+                    <img src="cpp.png" class="picture">
+                    <div class="info">
+                        <h3>C/C++</h3>                  <span class="badge intermediate" style="margin-top: 10px;">Fortgeschritten</span>
+                </div></div>
+
+                <div class="img_text">
+                    <img src="ocaml.png" class="picture">
+                    <div class="info">
+                        <h3>Ocaml</h3>
+                        <span class="badge beginner" style="margin-top: 10px;">Anfänger</span>
+                </div></div>
+
+                <div class="img_text">
+                    <img src="js.png" class="picture">
+                    <div class="info">
+                        <h3>HTML/CSS/JS</h3>
+                        <span class="badge beginner" style="margin-top: 10px;">Anfänger</span>
+                </div></div>
+            </div>
     </div>
-    <div class="block">
-        <h2 class="title"><u>andere Skills</u></h2>
-        <ul>
-                <!-- <h3 class="h3">Languages</h3> -->
-            <li>
-                <h3 class="h3">Russisch<img src="russia.png" class="picture"></h3>
-                <div class="h3_text">
-                    <p><em><u>Kenntnisstand</u></em>: Muttersprache</p>
+    <div class="grid-column">
+        <h2 class="title">sprachen</h2>
+
+        <div class="card hidden">
+            <div class="img_text" style="margin-top: 0;">
+                <img src="russia.png" class="picture">
+                <div class="info">
+                    <h3>Russisch</h3>
+                    <span class="badge intermediate" style="margin-top: 10px;">Muttersprache</span>
                 </div>
-            </li>
-            <li>
-                <h3 class="h3">Ukrainisch<img src="ukraine.png" class="picture"></h3>
-                <div class="h3_text">
-                    <p><em><u>Kenntnisstand</u></em>: Muttersprache</p>
+            </div>
+
+            <div class="img_text">
+                <img src="ukraine.png" class="picture">
+                <div class="info">
+                    <h3>Ukrainisch</h3>
+                    <span class="badge intermediate" style="margin-top: 10px;">Muttersprache</span>
                 </div>
-            </li>
-            <li>
-                <h3 class="h3">Englisch<img src="usa.png" class="picture"></h3>
-                <div class="h3_text">
-                    <p><em><u>Kenntnisstand</u></em>: C1</p>
+            </div>
+
+            <div class="img_text">
+                <img src="usa.png" class="picture">
+                <div class="info">
+                    <h3>Englisch</h3>
+                    <span class="badge advanced" style="margin-top: 10px;">C1</span>
                 </div>
-            </li>
-            <li>
-                <h3 class="h3">Deutsch<img src="germany.png" class="picture"></h3>
-                <div class="h3_text">
-                    <p><em><u>Kenntnisstand</u></em>: C1</p>
+            </div>
+
+            <div class="img_text">
+                <img src="germany.png" class="picture">
+                <div class="info">
+                    <h3>Deutsch</h3>
+                    <span class="badge advanced" style="margin-top: 10px;">C1</span>
                 </div>
-            </li>
-            <li>
-                <h3 class="h3">Französisch<img src="france.png" class="picture"></h3>
-                <div class="h3_text">
-                    <p><em><u>Kenntnisstand</u></em>: A2</p>
+            </div>
+
+            <div class="img_text">
+                <img src="france.png" class="picture">
+                <div class="info">
+                    <h3>Französisch</h3>
+                    <span class="badge beginner" style="margin-top: 10px;">A2</span>
                 </div>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </div>
-<div class="hobbies">
-    <div class="block">
-        <h2 class="title"><u>Hobbies</u></h2>
-        <ul>
-             <li>
-                <p>IT:)</p>
-            </li>
-            <li>
-                <p>Finances</p>
-            </li>
-            <li>
-                <p>Sport(Gym, Schwimmen, Kampfsport)</p>
-            </li>
-            <li>
-                <p>Bücher(alle Genres), aktuelles Buch: The Autobiography of Abraham Linkoln</p>
-            </li>
-            <li>
-                <p>Geschichte</p>
-            </li>
-            <li>
-                <p>Politik</p>
-            </li>
-        </ul>
-    </div>
 </div>
 <footer class="dark">
-<div class="divider">
-    <div class="cube"></div>
-</div>
-<p class="ending">das wars, tausend Dank für Ihre Aufmerksamkeit!!!</p>
+    <h3 class="contact-title">kontaktieren Sie mich gerne über:</h3>
+    <div class="contact-grid">
+        <div class="contact-column left-align">
+            <div class="contact-item hidden">
+                <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                <span>+4915115511040</span>
+            </div>
+            <a href="mailto:an.malyshev@gmail.com" class="contact-item hidden">
+                <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>an.malyshev@gmail.com</span>
+            </a>
+        </div>
+        <div class="contact-column right-align">
+            <a href="https://github.com/andreymalyshev-de" class="contact-item hidden" target="_blank" rel="noopener noreferrer">
+                <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/andrii-malyshev" class="contact-item hidden" target="_blank" rel="noopener noreferrer">
+                <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </div>
+    <div class="copyright">© 2026 Andrey Malyshev</div>
+    <button onclick="backToTop()" class="topBtn"><div class="topBtnArrow"></div></button>
+    <script src="script.js"></script>
 </footer>
-<button onclick="backToTop()" class="topBtn"><div class="topBtnArrow"></div></button>
-<script src="script.js"></script>
 </body>
 </html>
