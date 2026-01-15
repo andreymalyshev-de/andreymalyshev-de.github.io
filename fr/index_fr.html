@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="icon" type="img/png" href="../pic2-circle.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../styles.css">
+<title>Mon Portfolio</title>
+</head>
+<body>
+<header>
+<p class="foo">juste un site web à propos de moi :)</p>
+<div class="lang_menu">
+    <button onclick="toggling()" class="dropbtn"><img src="../france-menu.png" class="menuPic">Français</button>
+    <div id="myMenu" class="menu-content">
+        <a href="../en/" style="display: inline-flex; align-items: center;" lang="en"><img src="../usa-menu.png" class="menuPic">English</a>
+        <a href="../de/" style="display: inline-flex; align-items: center;" lang="de"><img src="../germany-menu.png" class="menuPic">Deutsch</a>
+    </div>
+</div>
+</header>
+<h1>Andrii Malyshev</h1>
+<div class="description hidden">
+
+    <div class="pic-container">
+        <img class="myPic2" src="../pic3.jpg">
+    </div>
+
+    <div class="bio-container">
+        <h2 class="bio-title">à propos de moi : </h2>
+        <p class="bio-text">
+            Basé à Munich, originaire d'Ukraine, je suis passionné par la transformation des connaissances théoriques en solutions pratiques. <br><br>
+            Actuellement étudiant en informatique à la TUM (3ème semestre), je suis à la recherche d'un poste d'étudiant salarié où je pourrais apporter mes compétences à une équipe tout en me développant professionnellement et personnellement. <br><br>
+            En dehors de la programmation, je me passionne pour l'histoire, la politique et la finance ;
+            <span class="reader">la lecture<span class="book">Mon livre actuel : L'autobiographie d'Benjamin Franklin</span></span>
+            m'offre également une excellente évasion du quotidien.
+            De plus, je ne peux pas imaginer ma vie sans sport, c'est pourquoi je nage régulièrement et vais à la salle de sport.
+        </p>
+        <button onclick="contact()" class="contact-button">Contactez-moi &rarr;</button>
+        </div>
+    </div>
+
+</div>
+
+<div class="grid">
+
+    <div class="grid-column">
+        <h2 class="title">études</h2>
+        <div class="card hidden">
+                <h3>Gymnase d’État n°28 de Zaporojié</h3>
+                <p class="role">Enseignement secondaire</p>
+                <p class="desc">Matières principales : Maths, Physique, Anglais, Informatique</p>
+        </div>        
+        <div class="card hidden">
+                <h3 lang="de">Studienkolleg Hannover</h3>
+                    <p class="role">Préparation à l'université</p>
+                    <p class="desc">Matières principales : Maths, Physique, Informatique, Chimie</p>
+        </div>
+        <div class="card hidden">
+                <h3 lang="de">Technische Universität München</h3>
+                <p class="role">B.Sc. Informatique</p>
+                <p class="desc">L'une des principales universités techniques au monde</p>
+        </div>
+    </div>
+    <div class="grid-column">
+        <h2 class="title">expériences</h2>
+            <div class="card hidden">
+                <h3>Professeur particulier</h3>
+                <span class="date">Mai 2024 - Oct. 2024</span>
+                <p class="role">École de tutorat "BestNote"</p>
+                <p class="desc">Enseignement des mathématiques et de l'allemand aux élèves de 9 à 18 ans.</p>
+            </div>
+            <div class="card hidden">
+                <h3>Étudiant salarié</h3>
+                <span class="date">Oct. 2025 - Déc. 2025</span>
+                <p class="role">PixelComputer GmbH</p>
+                <p class="desc">Support client, assemblage de matériel et configuration de logiciels</p>
+            </div>
+    </div>
+</div>
+<div class="grid" style="margin-bottom: 100px;">
+    <div class="grid-column">
+        <h2 class="title">compétences</h2>
+
+            <div class="card hidden">
+
+                <div class="img_text"  style="margin-top: 0;">
+                    <img src="../java.png" class="picture">
+                    <div class="info">
+                        <h3>Java</h3>
+                        <span class="badge intermediate" style="margin-top: 10px;">Intermédiaire</span>
+                </div></div>
+
+                <div class="img_text">
+                    <img src="../python.webp" class="picture">
+                    <div class="info">
+                        <h3>Python</h3>
+                        <span class="badge intermediate" style="margin-top: 10px;">Intermédiaire</span>
+                </div></div>
+
+                <div class="img_text">
+                    <img src="../cpp.png" class="picture">
+                    <div class="info">
+                        <h3>C/C++</h3>                  <span class="badge intermediate" style="margin-top: 10px;">Intermédiaire</span>
+                </div></div>
+
+                <div class="img_text">
+                    <img src="../sql.png" class="picture" style="width: 70px; height: auto; margin-right: 0; margin-left: -10px;">
+                    <div class="info" style="margin-left: 10px;">
+                        <h3>SQL</h3>
+                        <span class="badge beginner" style="margin-top: 10px;">Beginner</span>
+                </div></div>
+
+                <div class="img_text">
+                    <img src="../ocaml.png" class="picture">
+                    <div class="info">
+                        <h3>Ocaml</h3>
+                        <span class="badge beginner" style="margin-top: 10px;">Débutant</span>
+                </div></div>
+
+                <div class="img_text">
+                    <img src="../js.png" class="picture">
+                    <div class="info">
+                        <h3>HTML/CSS/JS</h3>
+                        <span class="badge beginner" style="margin-top: 10px;">Débutant</span>
+                </div></div>
+            </div>
+    </div>
+    <div class="grid-column">
+        <h2 class="title">langues</h2>
+
+        <div class="card hidden">
+            <div class="img_text" style="margin-top: 0;">
+                <img src="../russia.png" class="picture">
+                <div class="info">
+                    <h3>Russe</h3>
+                    <span class="badge intermediate" style="margin-top: 10px;">Langue maternelle</span>
+                </div>
+            </div>
+
+            <div class="img_text">
+                <img src="../ukraine.png" class="picture">
+                <div class="info">
+                    <h3>Ukrainien</h3>
+                    <span class="badge intermediate" style="margin-top: 10px;">Langue maternelle</span>
+                </div>
+            </div>
+
+            <div class="img_text">
+                <img src="../usa.png" class="picture">
+                <div class="info">
+                    <h3>Anglais</h3>
+                    <span class="badge advanced" style="margin-top: 10px;">C1</span>
+                </div>
+            </div>
+
+            <div class="img_text">
+                <img src="../germany.png" class="picture">
+                <div class="info">
+                    <h3>Allemand</h3>
+                    <span class="badge advanced" style="margin-top: 10px;">C1</span>
+                </div>
+            </div>
+
+            <div class="img_text">
+                <img src="../france.png" class="picture">
+                <div class="info">
+                    <h3>Français</h3>
+                    <span class="badge beginner" style="margin-top: 10px;">A2</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<footer class="dark">
+    <h3 class="contact-title">vous pouvez me contacter via :</h3>
+    <div class="contact-grid">
+        <div class="contact-column left-align">
+            <div class="contact-item hidden">
+                <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                <span>+4915115511040</span>
+            </div>
+            <a href="mailto:an.malyshev@gmail.com" class="contact-item hidden">
+                <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>an.malyshev@gmail.com</span>
+            </a>
+        </div>
+        <div class="contact-column right-align">
+            <a href="https://github.com/andreymalyshev-de" class="contact-item hidden" target="_blank" rel="noopener noreferrer">
+                <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/andrii-malyshev" class="contact-item hidden" target="_blank" rel="noopener noreferrer">
+                <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span>LinkedIn</span>
+            </a>
+        </div>
+    </div>
+    <div class="copyright">© 2026 Andrey Malyshev</div>
+    <button onclick="backToTop()" class="topBtn"><div class="topBtnArrow"></div></button>
+    <script src="../script.js"></script>
+</footer>
+</body>
+</html>

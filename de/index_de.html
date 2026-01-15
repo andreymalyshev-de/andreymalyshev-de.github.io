@@ -1,49 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- allows faster loading of fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
-<link rel="icon" type="img/png" href="pic2-circle.png">
+<link rel="icon" type="img/png" href="../pic2-circle.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
-<!--  rel = relation  -->
-<title>My Portfolio</title>
+<link rel="stylesheet" href="../styles.css">
+<title>Mein Portfolio</title>
 </head>
 <body>
 <header>
-<p class="foo">just a website about myself :)</p>
+<p class="foo">einfach ne Webseite über mich :)</p>
 <div class="lang_menu">
-    <button onclick="toggling()" class="dropbtn"><img src="usa-menu.png" class="menuPic">English</button>
+    <button onclick="toggling()" class="dropbtn"><img src="../germany-menu.png" class="menuPic">Deutsch</button>
     <div id="myMenu" class="menu-content">
-        <!-- href = link -->
-        <a href="index_de.html" style="display: inline-flex; align-items: center;" lang="de"><img src="germany-menu.png" class="menuPic">Deutsch</a>
-        <a href="index_fr.html" style="display: inline-flex; align-items: center;" lang="fr"><img src="france-menu.png" class="menuPic">Français</a>
+        <a href="../en/" style="display: inline-flex; align-items: center;" lang="en"><img src="../usa-menu.png" class="menuPic">English</a>
+        <a href="../fr/" style="display: inline-flex; align-items: center;" lang="fr"><img src="../france-menu.png" class="menuPic">Français</a>
     </div>
 </div>
-<!-- <div class="divider">
-</div> -->
 </header>
 <h1>Andrii Malyshev</h1>
 <div class="description hidden">
 
     <div class="pic-container">
-        <img class="myPic2" src="pic3.jpg">
+        <img class="myPic2" src="../pic3.jpg">
     </div>
 
     <div class="bio-container">
-        <h2 class="bio-title">about me: </h2>
+        <h2 class="bio-title">über mich: </h2>
         <p class="bio-text">
-            Based in Munich, originally from Ukraine, I'm passionate about turning theoretical knowledge into practical solutions. <br><br>
-            Currently, I'm a Computer Science student at TUM (3rd Semester) who is seeking a working student position where I can contribute my skills to a team while growing professionally and personally. <br><br>
-            Outside of coding, I'm an avid <span class="reader">reader<span class="book">My current book: The Autobiography of Abraham Linkoln</span></span> and history enthusiast, constantly exploring new topics in politics and finance.
-            I also can't imagine my life without sport, so I regulary swim and go to the gym. 
+            Wohnhaft in München, ursprünglich aus der Ukraine, brenne ich darauf, theoretisches Wissen in praktische Lösungen umzuwandeln. <br><br>
+            Derzeit studiere ich Informatik an der TUM (3. Semester) und suche einen Werkstudentenjob, bei dem ich meine Fähigkeiten in ein Team einbringen und mich gleichzeitig beruflich sowie persönlich weiterentwickeln kann. <br><br>
+            Abseits von Programmieren begeistern mich Geschichte, Politik und Finanzen; 
+            <span class="reader">Lesen<span class="book">Mein aktuelles Buch: The Autobiography of Benjamin Franklin</span></span> 
+            gibt mir eine ebenso gute Abwechselung vom Alltag.
+            Zudem kann ich mein Leben ohne Sport nicht vorstellen, also gehe ich regelmäßig schwimmen und ins Gym. 
         </p>
-        <button onclick="contact()" class="contact-button">Contact Me &rarr;</button>
+        <button onclick="contact()" class="contact-button">Kontakt &rarr;</button>
         </div>
     </div>
 
@@ -52,37 +48,36 @@
 <div class="grid">
 
     <div class="grid-column">
-        <h2 class="title">studies</h2>
+        <h2 class="title">studium</h2>
         <div class="card hidden">
-                <h3>Zaporizhzhya State Gymnasium #28</h3>
-                <p class="role">Secondary Education</p>
-                <p class="desc">Central Subjects: Math, Physics, English, IT</p>
+                <h3>Saporischschja Staatsgymnasium #28</h3>
+                <p class="role">Schulbildung</p>
+                <p class="desc">Schwerpunkte: Mathe, Physik, Englisch, IT</p>
         </div>        
         <div class="card hidden">
                 <h3 lang="de">Studienkolleg Hannover</h3>
-                    <p class="role">University Preparation</p>
-                    <p class="desc">Central Subjects: Math, Physics, IT, Chemistry</p>
+                    <p class="role">Studienvorbereitung</p>
+                    <p class="desc">Schwerpunkte: Mathe, Physik, IT, Chemie</p>
         </div>
         <div class="card hidden">
                 <h3 lang="de">Technische Universität München</h3>
-                <p class="role">B.Sc. Computer Science</p>
-                <p class="desc">One of the leading technical universities in the world</p>
+                <p class="role">B.Sc. Informatik</p>
+                <p class="desc">Eine der führenden technischen Universitäten der Welt</p>
         </div>
     </div>
     <div class="grid-column">
-        <h2 class="title">jobs</h2>
+        <h2 class="title">berufserfahrung</h2>
             <div class="card hidden">
-                <h3>Private Tutor</h3>
-                <span class="date">May 2024 - Oct 2024</span>
-                <!-- span - small text, margin: 0 by default -->
-                <p class="role">"BestNote" Tutoring School</p>
-                <p class="desc">Teaching Math and German to students aged 9-18.</p>
+                <h3>Privatlehrer</h3>
+                <span class="date">Mai 2024 - Okt 2024</span>
+                <p class="role">"BestNote" Nachhilfeschule</p>
+                <p class="desc">Unterricht in Mathe und Deutsch für Schüler im Alter von 9-18 Jahren.</p>
             </div>
             <div class="card hidden">
-                <h3>Working Student</h3>
-                <span class="date">Oct 2025 - Dec 2025</span>
+                <h3>Werkstudent</h3>
+                <span class="date">Okt 2025 - Dez 2025</span>
                 <p class="role">PixelComputer GmbH</p>
-                <p class="desc">Client support, hardware assembly, and software configuration</p>
+                <p class="desc">Kundensupport, Hardware-Aufsetzung und Software-Konfiguration</p>
             </div>
     </div>
 </div>
@@ -93,88 +88,87 @@
             <div class="card hidden">
 
                 <div class="img_text"  style="margin-top: 0;">
-                    <img src="java.png" class="picture">
+                    <img src="../java.png" class="picture">
                     <div class="info">
                         <h3>Java</h3>
-                        <span class="badge intermediate" style="margin-top: 10px;">Intermediate</span>
+                        <span class="badge intermediate" style="margin-top: 10px;">Fortgeschritten</span>
                 </div></div>
 
                 <div class="img_text">
-                    <img src="python.webp" class="picture">
+                    <img src="../python.webp" class="picture">
                     <div class="info">
                         <h3>Python</h3>
-                        <span class="badge intermediate" style="margin-top: 10px;">Intermediate</span>
+                        <span class="badge intermediate" style="margin-top: 10px;">Fortgeschritten</span>
                 </div></div>
 
                 <div class="img_text">
-                    <img src="cpp.png" class="picture">
+                    <img src="../cpp.png" class="picture">
                     <div class="info">
-                        <h3>C/C++</h3>                  <!-- style, not class!!! -->
-                        <span class="badge intermediate" style="margin-top: 10px;">Intermediate</span>
+                        <h3>C/C++</h3>                  <span class="badge intermediate" style="margin-top: 10px;">Fortgeschritten</span>
                 </div></div>
-                
+
                 <div class="img_text">
-                    <img src="sql.png" class="picture" style="width: 70px; height: auto; margin-right: 0; margin-left: -10px;">
+                    <img src="../sql.png" class="picture" style="width: 70px; height: auto; margin-right: 0; margin-left: -10px;">
                     <div class="info" style="margin-left: 10px;">
                         <h3>SQL</h3>
                         <span class="badge beginner" style="margin-top: 10px;">Beginner</span>
                 </div></div>
 
                 <div class="img_text">
-                    <img src="ocaml.png" class="picture">
+                    <img src="../ocaml.png" class="picture">
                     <div class="info">
                         <h3>Ocaml</h3>
-                        <span class="badge beginner" style="margin-top: 10px;">Beginner</span>
+                        <span class="badge beginner" style="margin-top: 10px;">Anfänger</span>
                 </div></div>
 
                 <div class="img_text">
-                    <img src="js.png" class="picture">
+                    <img src="../js.png" class="picture">
                     <div class="info">
                         <h3>HTML/CSS/JS</h3>
-                        <span class="badge beginner" style="margin-top: 10px;">Beginner</span>
+                        <span class="badge beginner" style="margin-top: 10px;">Anfänger</span>
                 </div></div>
             </div>
     </div>
     <div class="grid-column">
-        <h2 class="title">languages</h2>
+        <h2 class="title">sprachen</h2>
 
         <div class="card hidden">
             <div class="img_text" style="margin-top: 0;">
-                <img src="russia.png" class="picture">
+                <img src="../russia.png" class="picture">
                 <div class="info">
-                    <h3>Russian</h3>
-                    <span class="badge intermediate" style="margin-top: 10px;">Mother tongue</span>
+                    <h3>Russisch</h3>
+                    <span class="badge intermediate" style="margin-top: 10px;">Muttersprache</span>
                 </div>
             </div>
 
             <div class="img_text">
-                <img src="ukraine.png" class="picture">
+                <img src="../ukraine.png" class="picture">
                 <div class="info">
-                    <h3>Ukrainian</h3>
-                    <span class="badge intermediate" style="margin-top: 10px;">Mother tongue</span>
+                    <h3>Ukrainisch</h3>
+                    <span class="badge intermediate" style="margin-top: 10px;">Muttersprache</span>
                 </div>
             </div>
 
             <div class="img_text">
-                <img src="usa.png" class="picture">
+                <img src="../usa.png" class="picture">
                 <div class="info">
-                    <h3>English</h3>
+                    <h3>Englisch</h3>
                     <span class="badge advanced" style="margin-top: 10px;">C1</span>
                 </div>
             </div>
 
             <div class="img_text">
-                <img src="germany.png" class="picture">
+                <img src="../germany.png" class="picture">
                 <div class="info">
-                    <h3>German</h3>
+                    <h3>Deutsch</h3>
                     <span class="badge advanced" style="margin-top: 10px;">C1</span>
                 </div>
             </div>
 
             <div class="img_text">
-                <img src="france.png" class="picture">
+                <img src="../france.png" class="picture">
                 <div class="info">
-                    <h3>French</h3>
+                    <h3>Französisch</h3>
                     <span class="badge beginner" style="margin-top: 10px;">A2</span>
                 </div>
             </div>
@@ -183,14 +177,13 @@
 </div>
 </div>
 <footer class="dark">
-    <h3 class="contact-title">you can contact me via:</h3>
+    <h3 class="contact-title">kontaktieren Sie mich gerne über:</h3>
     <div class="contact-grid">
         <div class="contact-column left-align">
             <div class="contact-item hidden">
                 <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                    <!-- svg allows to draw things, path d(direction) explaines how it will be drawn -->
-                </svg>
+                    </svg>
                 <span>+4915115511040</span>
             </div>
             <a href="mailto:an.malyshev@gmail.com" class="contact-item hidden">
@@ -203,7 +196,6 @@
         </div>
         <div class="contact-column right-align">
             <a href="https://github.com/andreymalyshev-de" class="contact-item hidden" target="_blank" rel="noopener noreferrer">
-                   <!-- _blank makes the link to be open in a new tab, "noopener noreferrer" prevents hacker attaks from the opened website -->
                 <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
@@ -221,7 +213,7 @@
     </div>
     <div class="copyright">© 2026 Andrey Malyshev</div>
     <button onclick="backToTop()" class="topBtn"><div class="topBtnArrow"></div></button>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </footer>
 </body>
 </html>
