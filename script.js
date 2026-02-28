@@ -1,3 +1,4 @@
+// all descriptions below
 function toggling() {
     /* makes the menu visible */
     document.getElementById("myMenu").classList.toggle("show");
@@ -56,6 +57,7 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenEls = document.querySelectorAll('.hidden');
 hiddenEls.forEach((el) => observer.observe(el))
+
 
 /* toggling func changes the display attribute from none to block (shows the content of the menu);
     window.onclick checks whether the click was made on the button or somewhere else
