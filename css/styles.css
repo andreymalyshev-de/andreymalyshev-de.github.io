@@ -1,6 +1,22 @@
 /* margin - for the outer borders
 padding - for the inner */
 
+/* global variables */
+
+:root{
+    /* light theme */
+    --bg-primary: #f8f9fa;
+    --bg-secondary: #ffffff;
+    --text-main: #444444;
+    --text-titles: #1a1a1a;
+    --accent-sage: rgb(117, 176, 117);
+    --bio-bg: #2c3e50;
+    --bio-text: #ecf0f1;
+    --card-border: #2c3e50;
+    --pic-border: white;
+    --upper-buttons: #505658;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -36,12 +52,12 @@ padding - for the inner */
     border-radius: 20px;
     border: 1px solid #ddd;
     padding: 5px;
-    background-color: white;
+    background-color: var(--pic-border);
 }
 
 
 .bio-container{
-    background-color: #2c3e50;
+    background-color: var(--bio-bg);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     padding: 40px;
@@ -51,10 +67,10 @@ padding - for the inner */
 .bio-title{
     font-family: 'Lora', serif;
     font-size: 32px;
-    color: #ffffff;
+    color: var(--bio-text);
     margin-top: 0;
     margin-bottom: 5px;
-    border-bottom: 2px solid rgb(117, 176, 117);
+    border-bottom: 2px solid var(--accent-sage);
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -63,7 +79,7 @@ padding - for the inner */
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 1.8;
-    color: #ecf0f1;
+    color: var(--bio-text);
     margin-bottom: 30px;
 }
 
@@ -98,11 +114,11 @@ padding - for the inner */
 
 .contact-button {
     text-decoration: none;
-    color: rgb(117, 176, 117);
-    background-color: #2c3e50;
+    color: var(--accent-sage);
+    background-color: transparent;
     font-weight: bold;
     font-size: 16px;
-    border: 2px solid rgb(117, 176, 117);
+    border: 2px solid var(--accent-sage);
     border-radius: 20px;
     padding: 10px;
     transition: color 0.3s;
@@ -117,7 +133,7 @@ padding - for the inner */
 .cv-button {
     text-decoration: none;
     color: rgb(176, 117, 118);
-    background-color: #2c3e50;
+    background-color: transparent;
     font-weight: bold;
     font-size: 16px;
     border: 2px solid rgb(176, 117, 121);
@@ -144,7 +160,7 @@ padding - for the inner */
 }
 
 .card{
-    background-color: white;
+    background-color: var(--bg-secondary);
     padding: 25px;
     margin-bottom: 20px;
     border-radius: 12px;
@@ -156,7 +172,7 @@ padding - for the inner */
     /* transform - function that describes what happens on hover
        0.3s - duration
        ease - slow in the beginning and in the end */
-    border-left: 5px solid #2c3e50;
+    border-left: 5px solid var(--card-border);
 }
 
 .card:hover{
@@ -191,18 +207,18 @@ padding - for the inner */
 .card h3{
     margin: 0 0 5px 0;
     font-size: 20px;
-    color: #333;
+    color: var(--text-titles);
 }
 
 .role{
     font-weight: bold;
-    color: #555;
+    color: var(--card-text-dim, #555);
     margin: 0 0 10px 0;
 }
 
 .desc{
     font-size: 15px;
-    color: #666;
+    color: var(--text-main);
     line-height: 1.5;
     margin: 0;
 }
@@ -210,7 +226,7 @@ padding - for the inner */
 .date{
     display: block;
     font-size: 13px;
-    color: #888;
+    color: var(--card-text-dim, #888);
     margin-bottom: 5px;
     font-style: italic;
 }
@@ -221,7 +237,7 @@ h3{
 
 h1, h2, h3{
     font-family:  sans-serif;
-    color: #1a1a1a;
+    color: var(--text-titles);
     margin-top: 0;
 }
 
@@ -365,9 +381,9 @@ h2{
 /* decorations and stuff */
 
 body{
-    background-color: #f8f9fa;
+    background-color: var(--bg-primary);
     font-family: 'Inter', sans-serif;
-    color: #444;
+    color: var(--text-main);
     line-height: 1.6;/* distance between lines */
     margin: 0;
     padding: 0;
@@ -423,7 +439,7 @@ body{
 
 .dropbtn{
     background-color: transparent;
-    color: #505658;
+    color: var(--upper-buttons);
     cursor: pointer; /* makes finger when pointed at it */
     padding: 10px 15px;
     border: none;
@@ -438,11 +454,11 @@ body{
 
 .dropbtn::before{ /* arrow up/down */
     content: ' ';
-    display: inline-block; /* ??? */
+    display: inline-block; 
     width: 8px;
     height: 8px;
-    border-right: 2px solid #505658;
-    border-bottom: 2px solid #505658;
+    border-right: 2px solid var(--upper-buttons);
+    border-bottom: 2px solid var(--upper-buttons);
     transform: rotate(45deg);
     margin-right: 8px;
 }
@@ -453,7 +469,7 @@ body{
 
 .menu-content{
     display: none; /* ensures it will be hidden unless clicked */
-    background-color: rgb(233, 236, 239);
+    background-color: var(--menu-bg, rgb(233, 236, 239));
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     min-width: 135px;
     position: absolute;
@@ -461,7 +477,7 @@ body{
 }
 
 .menu-content a{
-    color: #505658;
+    color: var(--upper-buttons);
     display: block;
     text-decoration: none;
     font-size: 17px;
@@ -536,9 +552,122 @@ body{
     pointer-events: all;
 }
 
-/* .shown:nth-child(2) { transition-delay: 0.1s; }
-.shown:nth-child(3) { transition-delay: 0.2s; }
-.shown:nth-child(4) { transition-delay: 0.3s; } */
+/* Base Toggle Background (Dark Mode) */
+.lightDark {
+    color: var(--upper-buttons);
+    position: absolute;
+    display: inline-block;
+    left: 100px;
+    top: 20px;
+    z-index: 1000;
+    
+    width: 80px;
+    height: 40px;
+
+    border-radius: 220px;
+    border: 1px solid var(--upper-buttons);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+/* The Moving Circle */
+.item {
+    position: absolute;
+    left: 6px;
+    top: 7px;
+
+    width: 24px;
+    height: 24px;
+
+    /* border: 1px solid #color - essential for the borderline being seen */
+    border-radius: 50%;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SVG Icon Styling */
+.icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.moon { opacity: 1; color: var(--upper-buttons); transform: scale(1); }
+.sun { opacity: 0; color: var(--upper-buttons); transform: scale(0.5) rotate(-45deg); }
+
+/* --- ACTIVE STATE (Light Mode) --- */
+
+
+/* Circle moves to the right and turns light */
+.active .item {
+    left: 52px;
+}
+
+/* Swap icons based on the global .active class */
+.active .moon { 
+    opacity: 0; 
+    transform: scale(0.5) rotate(45deg); 
+}
+
+.active .sun { 
+    opacity: 1; 
+    color: #f8f9fa; 
+    transform: scale(1) rotate(0); 
+}
+
+/* Apply Dark Mode Variables globally */
+.active {
+    --bg-primary: #2c3e50;
+    --bg-secondary: #39516d;
+    --text-main: #d1d5da;
+    --text-titles: #ffffff;
+    --accent-sage: #8fce8f;
+    --bio-bg: #111a22;
+    --bio-text: #ecf0f1;
+    --card-border: var(--accent-sage);
+    --pic-border: var(--bio-bg);
+    --upper-buttons: #f8f9fa;
+    --card-text-dim: #b0c4de; 
+    --menu-bg: #39516d;
+}
+
+body.active .dark{
+    background-color: #111a22;
+}
+
+body.active .myPic2 {
+    border-color: #62798e;
+}
+
+.active .badge.intermediate {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: #81c784;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.active .badge.beginner {
+    background-color: rgba(156, 39, 176, 0.2); 
+    color: #ba68c8; 
+    border: 1px solid rgba(156, 39, 176, 0.3);
+}
+
+.active .badge.advanced {
+    background-color: rgba(33, 150, 243, 0.2); 
+    color: #64b5f6;
+    border: 1px solid rgba(33, 150, 243, 0.3);
+}
+
+.no-transition * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
 
 /* mobile */
 
@@ -583,7 +712,6 @@ body{
     }
 
     .menu-content{
-        background-color: rgba(233, 236, 239, 0.0);
         margin-left: -5px;
         box-shadow: none;
     }
@@ -601,9 +729,28 @@ body{
         margin-top: 0;
         margin-bottom: 40px;
     }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+    }
+
+    .cv-button {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .lightDark {
+        position: relative;
+        align-items: center;
+        left: 0;
+    }
+
+
 }
 
 
-/* *{
+/*  *{
     outline: 1px solid red;
-}  */
+}   */

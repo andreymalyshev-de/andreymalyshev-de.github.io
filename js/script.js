@@ -1,9 +1,9 @@
 // all descriptions below
 function toggling() {
-    /* makes the menu visible */
+    /* makes the menu visible (finds the proper element by the unique id)*/
     document.getElementById("myMenu").classList.toggle("show");
     /* turns the arrow up */
-    document.querySelector(".dropbtn").classList.toggle("active")
+    document.querySelector(".dropbtn").classList.toggle("dropped")
 }
 
 window.onclick = function(event) {
@@ -15,8 +15,8 @@ window.onclick = function(event) {
         }
 
         var btn = this.document.querySelector(".dropbtn");
-        if (btn.classList.contains("active")) {
-            btn.classList.remove("active");
+        if (btn.classList.contains("dropped")) {
+            btn.classList.remove("dropped");
         }
     }
 }
@@ -58,6 +58,27 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenEls = document.querySelectorAll('.hidden');
 hiddenEls.forEach((el) => observer.observe(el))
 
+function lightDark() {
+    const html = document.documentElement; // Target HTML for consistency
+    html.classList.toggle('active');
+
+    const body = document.body;
+    body.classList.toggle('active'); // toggles the active flag in the body
+
+    if (html.classList.contains('active')) {
+        localStorage.setItem('theme', 'active');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme === 'active') {
+        document.body.classList.add('active');
+    }
+});
 
 /* toggling func changes the display attribute from none to block (shows the content of the menu);
     window.onclick checks whether the click was made on the button or somewhere else
