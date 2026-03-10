@@ -84,7 +84,7 @@ padding - for the inner */
 }
 
 .reader{
-    border-bottom: 1px dashed rgb(117, 176, 117);
+    color: rgb(117, 176, 117);
     padding-bottom: 3px;
     cursor: help;
     position: relative;
