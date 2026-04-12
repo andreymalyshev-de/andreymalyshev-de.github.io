@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script>
-    /* makes sure the theme is loaded instantly */
-(function() {
-            const savedTheme = localStorage.getItem('theme');
-            // Apply to documentElement (html tag) because body doesn't exist yet
-            if (savedTheme === 'active') {
-                document.documentElement.classList.add('no-transition');
-                document.documentElement.classList.add('active');
-                
-                // Remove the freeze class after the first frame is painted
-                window.requestAnimationFrame(() => {
-                    setTimeout(() => {
-                        document.documentElement.classList.remove('no-transition');
-                    }, 50);
-                });
-            }
-        })();
-</script>
-<script src="../js/script.js" defer></script> <!-- defer makes sure the script will be run after html is downloaded -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-13R24NX5ZC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-13R24NX5ZC');
+    </script>
+    <script>
+        /* makes sure the theme is loaded instantly */
+    (function() {
+                const savedTheme = localStorage.getItem('theme');
+                // Apply to documentElement (html tag) because body doesn't exist yet
+                if (savedTheme === 'active') {
+                    document.documentElement.classList.add('no-transition');
+                    document.documentElement.classList.add('active');
+                    
+                    // Remove the freeze class after the first frame is painted
+                    window.requestAnimationFrame(() => {
+                        setTimeout(() => {
+                            document.documentElement.classList.remove('no-transition');
+                        }, 50);
+                    });
+                }
+            })();
+    </script>
+    <script src="../js/script.js" defer></script> <!-- defer makes sure the script will be run after html is downloaded -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- allows faster loading of fonts -->
